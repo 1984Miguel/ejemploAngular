@@ -1,0 +1,17 @@
+{ 
+"searchCriteria": [
+    {
+     "terminalId": "1111"
+    },
+    {
+     "terminalId": "2222"
+    },
+    {
+     "terminalId": "3333"
+    },
+    {
+     "terminalId": "4444"
+    }
+ ]
+
+}

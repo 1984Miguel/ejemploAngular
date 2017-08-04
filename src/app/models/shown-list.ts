@@ -8,4 +8,20 @@ export class ShownList {
     )
     {}
 
+       static newOfJson(json: any): ShownList
+    {
+            return new ShownList(
+            json._terminalID,
+            json._type,
+            json._dateReciced,
+            json._downlodStatement
+            )
+    }    
+
+      static nuevaColeccionDesdeJson(json: any[]): ShownList[]{
+        return json.map((shownListJson: any) : ShownList =>{
+            return ShownList.newOfJson(shownListJson);
+        });
+    }  
+
 }
